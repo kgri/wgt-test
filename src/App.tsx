@@ -10,7 +10,7 @@ export interface PageProps {
   onNextPage: () => void;
 }
 
-export default () => {
+const App = () => {
   const [activePage, setActivePage] = useState(1);
   let activeComponent = null;
 
@@ -53,3 +53,5 @@ export default () => {
     </div>
   );
 };
+
+export default App

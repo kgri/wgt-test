@@ -1,3 +1,5 @@
 import React from "react";
 
-export default () => <>Done!</>;
+const Four = () => <>Done!</>;
+
+export default Four

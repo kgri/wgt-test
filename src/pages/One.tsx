@@ -1,6 +1,8 @@
 import React from "react";
 import {PageProps} from "../App";
 
-export default ({ onNextPage }: PageProps) => (
+const One = ({ onNextPage }: PageProps) => (
   <button onClick={onNextPage}>Start</button>
 );
+
+export default One

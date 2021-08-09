@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import {PageProps} from "../App";
 
-export default ({ onNextPage }: PageProps) => {
+const Two =  ({ onNextPage }: PageProps) => {
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   const onFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -20,3 +20,5 @@ export default ({ onNextPage }: PageProps) => {
     </form>
   );
 };
+
+export default Two

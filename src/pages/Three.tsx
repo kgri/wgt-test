@@ -2,7 +2,7 @@ import React, {useRef, useState} from "react";
 import {PageProps} from "../App";
 import styles from "./Three.module.css";
 
-export default ({ onNextPage }: PageProps) => {
+const Three = ({ onNextPage }: PageProps) => {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const [isErrorVisible, setIsErrorVisible] = useState(false);
   const [inputValue, setInputValue] = useState("");
@@ -44,3 +44,5 @@ export default ({ onNextPage }: PageProps) => {
     </form>
   );
 };
+
+export default Three
