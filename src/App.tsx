@@ -4,13 +4,14 @@ import styles from "./App.module.css";
 import One from "./pages/One";
 import Two from "./pages/Two";
 import Three from "./pages/Three";
+import Four from "./pages/Four";
 
 export interface PageProps {
   onNextPage: () => void;
 }
 
 export default () => {
-  const [activePage, setActivePage] = useState(3);
+  const [activePage, setActivePage] = useState(1);
   let activeComponent = null;
 
   const onNextPage = () => {
@@ -26,6 +27,9 @@ export default () => {
       break;
     case 3:
       activeComponent = <Three onNextPage={onNextPage} />;
+      break;
+    case 4:
+      activeComponent = <Four />;
       break;
   }
 
